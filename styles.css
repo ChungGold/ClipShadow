@@ -17,11 +17,8 @@
 }
 
 .text:before, .text:after {
-    content: attr(data-text);
     position: absolute;
-    background: black;
-    overflow: hidden;
-    top: 0;
+    content: "CLIP";
 }
 
 .text:before{
@@ -43,10 +40,10 @@
         clip: rect(129px, auto, 4px, auto);
     }
     10% {
-        clip: rect(85px, auto, 120px, auto);
+        clip: rect(85px, auto, 4px, auto);
     }
     15% {
-        clip: rect(85px, auto, 140px, auto);
+        clip: rect(85px, auto, 91px, auto);
     }
     20% {
         clip: rect(148px, auto, 91px, auto);
@@ -61,13 +58,13 @@
         clip: rect(69px, auto, 71px, auto);
     }
     40% {
-        clip: rect(146px, auto, 160px, auto);
+        clip: rect(146px, auto, 71px, auto);
     }
     45% {
         clip: rect(146px, auto, 43px, auto);
     }
     50% {
-        clip: rect(102px, auto, 170px, auto);
+        clip: rect(102px, auto, 43px, auto);
     }
     55% {
         clip: rect(102px, auto, 170px, auto);
@@ -94,7 +91,7 @@
         clip: rect(67px, auto, 39px, auto);
     }
     95% {
-        clip: rect(67px, auto, 103px, auto);
+        clip: rect(67px, auto, 39px, auto);
     }
     100% {
         clip: rect(83px, auto, 103px, auto);
